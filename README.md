@@ -72,11 +72,9 @@ Once you have set up the movie genre classification project, you can use it in t
 ## Web Application
 * Access the local web application by opening your web browser and visiting http://localhost:5555.
 
-![Screenshot 2023-05-15 at 7 15 18 PM](https://github.com/nursnaaz/Movie-Genere-CI-CD-Pipeline-Prediction/assets/18391640/aa7b718c-4ac9-47f8-a186-277f46d05216)
 
 * Access the Heroku web application by opening your web browser and visiting https://movie-genere.herokuapp.com/
 
-![Screenshot 2023-05-15 at 7 15 05 PM](https://github.com/nursnaaz/Movie-Genere-CI-CD-Pipeline-Prediction/assets/18391640/f51bfb31-2c8b-4bfc-85d2-5b3a8e655b1d)
 Enter a movie overview in the provided input field.
 
 Click the "Predict" button to get the predicted genres for the movie.
@@ -101,12 +99,10 @@ Parameter value: A vengeful New York transit cop decides to steal a trainload of
 
 ```curl -d "overview=A vengeful New York transit cop decides to steal a trainload of subway fares; his foster brother, a fellow cop, tries to protect him." -X POST https://movie-genere.herokuapp.com/predict_api```
 
-<img width="1495" alt="Screenshot 2023-05-15 at 7 00 38 PM" src="https://github.com/nursnaaz/Movie-Genere-CI-CD-Pipeline-Prediction/assets/18391640/e7798cf5-c8a7-46fc-932e-577606377ac4">
-
 
 ``` curl -d "overview=A vengeful New York transit cop decides to steal a trainload of subway fares; his foster brother, a fellow cop, tries to protect him." -X POST http:///localhost:5555/predict_api ```
 
- <img width="1499" alt="Screenshot 2023-05-15 at 7 01 47 PM" src="https://github.com/nursnaaz/Movie-Genere-CI-CD-Pipeline-Prediction/assets/18391640/12fabc15-9622-49a6-b4c7-c1b4459e42f3">
+
  
 ## Model Training
 
@@ -145,22 +141,6 @@ To set up CI/CD for your own repository, you can follow these steps:
 * Add the necessary Heroku environment variables in your GitHub repository's secrets. These variables may include the Heroku API key, Heroku app name, etc.
 
 * Push the code to the GitHub repository, and the CI/CD pipeline will automatically trigger. The workflow will build, test, and deploy the code to your Heroku app.
-
-![Screenshot 2023-05-15 at 7 20 04 PM](https://github.com/nursnaaz/Movie-Genere-CI-CD-Pipeline-Prediction/assets/18391640/a6ba4881-3d98-4394-a8cb-2685fa940075)
-
-# Future Developement
-
-* Improving Model Performance: Experiment with different machine learning algorithms and techniques to improve the model's accuracy and F1-score. This could include exploring ensemble methods, deep learning models (e.g., LSTM or Transformer), or advanced feature engineering techniques.
-
-* Handling Imbalanced Data: Address the issue of imbalanced data in the movie genres dataset by applying techniques such as oversampling, undersampling, or utilizing class weights during model training. This can help improve the model's performance for genres with limited representation.
-
-* Enhancing Text Preprocessing: Refine the text preprocessing steps to improve the quality of the input data. This could involve experimenting with different techniques for removing noise, handling misspelled words, or incorporating part-of-speech tagging to capture more meaningful features.
-
-* Deployment Scalability: Optimize the deployment process to handle larger datasets and increased user traffic. This can involve exploring options like deploying the application on cloud platforms such as AWS, Google Cloud, or Azure, or implementing containerization with technologies like Kubernetes for easier scalability and resource management.
-
-* Multi-Language Support: Extend the model to support multiple languages for genre classification, allowing for a broader range of movies from different regions and languages to be categorized accurately.
-
-* User Interface Enhancements: Improve the user interface of the web application to provide a more intuitive and visually appealing experience. This can include adding search functionalities, filtering options, or displaying additional movie details along with the predicted genres.
 
 
 
