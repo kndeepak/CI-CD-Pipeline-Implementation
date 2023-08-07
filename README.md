@@ -30,7 +30,7 @@ To use the movie genre classification project, you can follow the instructions b
 ## Local Setup
 1. Clone the repository to your local machine:
     
-    ``` git clone https://github.com/nursnaaz/Movie-Genere-CI-CD-Pipeline-Prediction.git ```
+    ``` git clone https://github.com/kndeepak/CI-CD-Pipeline-Implementation.git ```
 
 2. Navigate to the project directory:
 
